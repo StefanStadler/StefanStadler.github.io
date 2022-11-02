@@ -50,10 +50,17 @@
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+<body>
 <div id="main" class="relative">
   <div>
     <div class="w-full z-50 top-0 py-3 sm:py-5 absolute sticky top-0 z-50">
+      <div class="lg:hidden flex justify-center content-center text-center">
+        <div>
+          <button class="z-50" (click)="setMobileMenu()">
+            <i class="bx bx-menu text-5xl"></i>
+          </button>
+        </div>
+      </div>
       <div class="container flex items-center justify-between">
         <div class="hidden lg:block">
           <ul class="flex items-center">
@@ -80,41 +87,29 @@
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span> <span
               class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
             </li>
-
           </ul>
-        </div>
-        <div class="lg:hidden flex justify-center content-center z-10">
-          <button class="z-50" (click)="setMobileMenu()">
-            <i class="bx bx-menu text-4xl"></i>
-          </button>
         </div>
       </div>
     </div>
 
     <div class="hidden sticky top-20 mobile-menu z-50 " id="mobileNav">
-      <ul class="flex flex-col text-center text-white bg-gray-800 rounded">
-        <li class="py-4 ">
-          <span (click)="triggerMobileNavItem('#intro')"
-                class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
+      <ul class="flex flex-col text-center text-white ">
+        <li class="py-4 bg-gray-700 hover:bg-gray-500 rounded-t-lg" (click)="triggerMobileNavItem('#intro')">
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
         </li>
-        <li class="py-4">
-          <span (click)="triggerMobileNavItem('#about')"
-                class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
+        <li class="py-4 bg-gray-700 hover:bg-gray-500" (click)="triggerMobileNavItem('#about')">
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
         </li>
-        <li class="py-4">
-          <span (click)="triggerMobileNavItem('#services')"
-                class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
+        <li class="py-4 bg-gray-700 hover:bg-gray-500" (click)="triggerMobileNavItem('#services')">
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
         </li>
-        <li class="py-4">
-          <span (click)="triggerMobileNavItem('#work')"
-                class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span>
+        <li class="py-4 bg-gray-700 hover:bg-gray-500 rounded-b-lg" (click)="triggerMobileNavItem('#work')">
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span>
         </li>
-
       </ul>
     </div>
 
     <div id="content">
-
       <div class="p-8 min-h-screen flex justify-center content-center" id="intro">
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 flex justify-center content-center">
           <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
@@ -136,7 +131,6 @@
           </div>
         </div>
       </div>
-
       <div class="p-8 min-h-screen flex justify-center content-center" id="about">
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8">
           <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row h-full pl-6 pr-6">
@@ -213,8 +207,7 @@
           </div>
         </div>
       </div>
-
-      <div class="p-8 min-h-screen flex justify-center content-center" id="services">
+      <div class="pt-20 min-h-screen flex justify-center content-center" id="services">
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 flex justify-center content-center">
           <div
             class="p-4 rounded-md flex justify-center content-center items-center  text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
@@ -268,8 +261,7 @@
           </div>
         </div>
       </div>
-
-      <div class="pt-10 px-8 min-h-screen flex justify-center content-center" id="work">
+      <div class="pt-20 px-8 min-h-screen flex justify-center content-center" id="work">
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 flex justify-center content-center">
           <h2
             class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl sm:max-h-20">

@@ -28,7 +28,6 @@ export class AppComponent {
   }
 
   setMobileMenu() {
-    console.log(this.mobileMenu)
     this.mobileMenu = !this.mobileMenu;
     this.setMobileNavClass();
   }
