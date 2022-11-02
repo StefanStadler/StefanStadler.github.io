@@ -21,37 +21,17 @@
 
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
-  <meta name="theme-color" content="#5540af" />
-
-  <meta property="og:site_name" content="Atom Template" />
-
-  <meta property="og:image" content="//assets/img/social.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <meta name="twitter:site" content="@tailwindmade" />
-
-  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
-
   <link as="style"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
         rel="preload" />
-
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
-
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-
-  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
-
-  <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
-
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-<div id="main" class="relative">
+<div id="main" class="relative pb-20">
   <div>
     <div class="w-full z-50 top-0 py-3 sm:py-5 absolute sticky top-0 z-50">
       <div class="lg:hidden flex justify-center content-center text-center">
@@ -68,24 +48,24 @@
               <span (click)="triggerNavItem('#intro')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
 
-              <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
               <span (click)="triggerNavItem('#about')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
 
-              <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
               <span (click)="triggerNavItem('#services')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
 
-              <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
               <span (click)="triggerNavItem('#work')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span> <span
-              class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              class="block h-0.5 w-full bg-transparent "></span>
             </li>
           </ul>
         </div>
@@ -93,17 +73,17 @@
     </div>
 
     <div class="hidden sticky top-20 mobile-menu z-50 " id="mobileNav">
-      <ul class="flex flex-col text-center text-white ">
-        <li class="py-4 bg-gray-700 hover:bg-gray-500 rounded-t-lg" (click)="triggerMobileNavItem('#intro')">
+      <ul class="flex flex-col text-center text-white">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#intro')">
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
         </li>
-        <li class="py-4 bg-gray-700 hover:bg-gray-500" (click)="triggerMobileNavItem('#about')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#about')">
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
         </li>
-        <li class="py-4 bg-gray-700 hover:bg-gray-500" (click)="triggerMobileNavItem('#services')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#services')">
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
         </li>
-        <li class="py-4 bg-gray-700 hover:bg-gray-500 rounded-b-lg" (click)="triggerMobileNavItem('#work')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#work')">
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span>
         </li>
       </ul>
@@ -154,7 +134,7 @@
                 </div>
                 <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
                   <a href="https://www.linkedin.com/in/stefanstadler/" target="_blank" class="pl-4"> <i
-                    class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i> </a>
+                    class="bx bxl-linkedin text-2xl text-primary "></i> </a>
                 </div>
               </div>
             </div>
@@ -215,7 +195,7 @@
           </div>
           <div
             class="p-4 rounded-md flex items-center justify-center grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary h-96">
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
               <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                 <div class="block">
                   <img src="/assets/img/icon-development-black.svg" alt="development icon" />
@@ -223,13 +203,28 @@
               </div>
               <div class="text-center">
                 <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl group-hover:text-zinc-400">
+                  class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl ">
                   FULLSTACK WEB DEVELOPMENT </h3>
-                <p class="text-grey pt-4 text-sm group-hover:text-zinc-400 md:text-base">
+                <p class="text-grey pt-4 text-sm md:text-base">
                   Migration or Rewrite of legacy applications to state of the art software stacks and technologies.</p>
               </div>
             </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary h-96">
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="block">
+                  <img src="/assets/img/devops.svg" alt="devops icon" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3
+                  class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl ">
+                  DevOps </h3>
+                <p class="text-grey pt-4 text-sm md:text-base">
+                  Introduction of Continuous Integration / Delivery workflows with CircleCI, Github Actions and
+                  Jenkins. </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
               <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                 <div class="block">
                   <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
@@ -237,25 +232,10 @@
               </div>
               <div class="text-center">
                 <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl group-hover:text-zinc-400">
+                  class="pt-8 text-lg font-semibold uppercase text-primary  lg:text-xl ">
                   Cloud Native </h3>
-                <p class="text-grey pt-4 text-sm group-hover:text-zinc-400 md:text-base">
+                <p class="text-grey pt-4 text-sm  md:text-base">
                   Setup of Cloud Native Architectures and Infrastructure mainly in AWS and Terraform </p>
-              </div>
-            </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary h-96">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="block">
-                  <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
-                </div>
-              </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl group-hover:text-zinc-400">
-                  DevOps </h3>
-                <p class="text-grey pt-4 text-sm group-hover:text-zinc-400 md:text-base">
-                  Introduction of Continuous Integration / Delivery workflows with CircleCI, Github Actions and
-                  Jenkins. </p>
               </div>
             </div>
           </div>
@@ -346,27 +326,10 @@
                         <span class="block font-body text-black">
                           <ul class="cv">
                             <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> implemented a fully
-                              functional cloud solution consisting of a Kubernetes Operator and Terraform infrastructure
-                              setup in AWS
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> implemented a new reporting engine for FTAPI admins that collects and integrates vast datasets to intuitively readable summaries
                             </li>
                             <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> developed an Angular 14
-                              Frontend SDK that enables rapid development within the cplace software solution for
-                              internal, partner and customer developers
-                            </li>
-                            <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> introduced API first
-                              design principles, test driven development and state of the art tech stack
-                            </li>
-                            <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> migrated core Backend
-                              APIs and Frontend components to latest Angular and Springboot framework
-                            </li>
-                            <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> The results of my work
-                              are seen daily by thousands of clients at world reknown OEMs in the automotive and
-                              pharmaceutical branch (and others).
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> developed <a class="text-blue-600" target="_blank" href="https://www.ftapi.com/plattform/secuforms/">FTAPI Secu Forms</a> as a greenfield project from scratch (Vue.js, Springboot, Docker, Jenkins CI environment with continuous e2e testing and deployment)
                             </li>
                           </ul>
                         </span>
@@ -392,32 +355,15 @@
                     <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
                     <div class="md:-mt-1 md:pl-8">
                       <span class="block font-body font-bold text-grey-40">October 2019 - Feb 2021</span> <span
-                      class="block pt-2 font-header text-xl font-bold uppercase text-primary">DevOps Engineer</span>
+                      class="block pt-2 font-header text-xl font-bold uppercase text-primary">Software Engineer</span>
                       <div class="pt-2">
                         <span class="block font-body text-black">
                           <ul class="cv">
                             <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> implemented a fully
-                              functional cloud solution consisting of a Kubernetes Operator and Terraform infrastructure
-                              setup in AWS
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> implemented a lightweight backend server on a Raspberry Pi that allows to demonstrate car functionalities (seat-heating, lights etc.) on mobile devices during exhibitions
                             </li>
                             <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> developed an Angular 14
-                              Frontend SDK that enables rapid development within the cplace software solution for
-                              internal, partner and customer developers
-                            </li>
-                            <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> introduced API first
-                              design principles, test driven development and state of the art tech stack
-                            </li>
-                            <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> migrated core Backend
-                              APIs and Frontend components to latest Angular and Springboot framework
-                            </li>
-                            <li>
-                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> The results of my work
-                              are seen daily by thousands of clients at world reknown OEMs in the automotive and
-                              pharmaceutical branch (and others).
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> fully automated a code analysis engine for vehicle diagnostics code that reduced manual time effort by 95%
                             </li>
                           </ul>
                         </span>
