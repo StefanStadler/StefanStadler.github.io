@@ -10,7 +10,6 @@ export class AppComponent {
   mobileMenu: boolean = false;
 
   triggerNavItem(s: string) {
-    console.log('nav')
     // @ts-ignore
     const el: HTMLElement = document.getElementById(s.replace('#', ''));
     if (el) {
@@ -19,11 +18,33 @@ export class AppComponent {
   }
 
   triggerMobileNavItem(s: string) {
-    console.log('nav')
-
+    // @ts-ignore
+    const el: HTMLElement = document.getElementById(s.replace('#', ''));
+    if (el) {
+      el.scrollIntoView();
+    }
+    this.mobileMenu = false;
+    this.setMobileNavClass();
   }
 
-  setMobileMenu(b: boolean) {
+  setMobileMenu() {
+    console.log(this.mobileMenu)
+    this.mobileMenu = !this.mobileMenu;
+    this.setMobileNavClass();
+  }
 
+  private setMobileNavClass() {
+    // @ts-ignore
+    const el: HTMLElement = document.getElementById('mobileNav');
+    // @ts-ignore
+    const contentEl: HTMLElement = document.getElementById('content');
+
+    if (this.mobileMenu) {
+      el.classList.remove("hidden");
+      contentEl.classList.add("blur");
+    } else {
+      el.classList.add("hidden");
+      contentEl.classList.remove("blur");
+    }
   }
 }
