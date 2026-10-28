@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .hover02 figure img {
   height: auto;
   -webkit-transition: .3s ease-in-out;
@@ -6,10 +10,10 @@
 .hover02 figure:hover img {
   width: 350px;
 }
-.cv li{
+.cv li {
   padding-top: 10px;
 }
 
-.blur{
+.blur {
   opacity: 0.7;
 }

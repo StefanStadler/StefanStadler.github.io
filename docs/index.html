@@ -1,12 +1,564 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>App</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}body{margin:0;line-height:inherit}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }</style><link rel="stylesheet" href="styles.b4c8e3fd80845ce9.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.b4c8e3fd80845ce9.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<script src="runtime.231e96734c9fdc57.js" type="module"></script><script src="polyfills.d00ba71d24f64d98.js" type="module"></script><script src="main.5bcbed61ad8c0f5b.js" type="module"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
 
-</body></html>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+  <title>Portfolio | Stefan Stadler</title>
+
+  <meta property="og:title" content="Portfolio | Stefan Stadler" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="canonical" href="https://stefanstadler.github.io" />
+
+  <meta property="og:url" content="https://stefanstadler.github.io" />
+
+  <meta name="description" content="Portfolio of Stefan Stadler – Senior Fullstack Engineer & Tech Lead with 10+ years of experience in cloud-native software, AI-driven development, Angular, Spring Boot, Kubernetes, and AWS." />
+
+  <meta property="og:description" content="Portfolio of Stefan Stadler – Senior Fullstack Engineer & Tech Lead with 10+ years of experience in cloud-native software, AI-driven development, Angular, Spring Boot, Kubernetes, and AWS." />
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <link as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="preload" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="main" class="relative pb-20">
+  <div>
+    <div class="w-full z-50 top-0 py-3 sm:py-5 absolute sticky top-0 z-50">
+      <div class="lg:hidden flex justify-center content-center text-center">
+        <div>
+          <button class="z-50" data-toggle-menu>
+            <i class="bx bx-menu text-5xl"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container flex items-center justify-between">
+        <div class="hidden lg:block">
+          <ul class="flex items-center">
+            <li class="group pl-6">
+              <span data-nav="intro"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
+
+              <span class="block h-0.5 w-full bg-transparent "></span>
+            </li>
+            <li class="group pl-6">
+              <span data-nav="about"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
+
+              <span class="block h-0.5 w-full bg-transparent "></span>
+            </li>
+            <li class="group pl-6">
+              <span data-nav="services"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
+
+              <span class="block h-0.5 w-full bg-transparent "></span>
+            </li>
+            <li class="group pl-6">
+              <span data-nav="projects"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Projects</span>
+              <span class="block h-0.5 w-full bg-transparent "></span>
+            </li>
+            <li class="group pl-6">
+              <span data-nav="work"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span> <span
+              class="block h-0.5 w-full bg-transparent "></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden sticky top-20 mobile-menu z-50 " id="mobileNav">
+      <ul class="flex flex-col text-center text-white">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="intro" data-close-menu>
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
+        </li>
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="about" data-close-menu>
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
+        </li>
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="services" data-close-menu>
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
+        </li>
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="projects" data-close-menu>
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Projects</span>
+        </li>
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="work" data-close-menu>
+          <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <div class="p-8 min-h-screen flex justify-center content-center" id="intro">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 flex justify-center content-center">
+          <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
+            <div class="flex flex-col items-center justify-center lg:flex-row">
+              <div class="rounded-full border-8 border-primary shadow-xl">
+                <img src="/assets/img/profile.jpeg" class="h-48 rounded-full sm:h-56" alt="author" />
+              </div>
+              <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+                <h1 class="text-center font-header text-4xl sm:text-left sm:text-5xl md:text-6xl">
+                  Hello I'm Stefan</h1>
+                <h1 class="text-center font-header text-4xl sm:text-left sm:text-5xl md:text-6xl">
+                  Senior Fullstack Engineer & Tech Lead</h1>
+                <p class="pt-4 text-center font-header text-lg text-grey-20 sm:text-left">
+                  AI-Driven &nbsp;·&nbsp; Cloud-Native &nbsp;·&nbsp; 10+ Years
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-8 min-h-screen flex justify-center content-center" id="about">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8">
+          <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row h-full pl-6 pr-6">
+            <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left justify-center content-center">
+              <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+                Who am I? </h2>
+              <p class="pt-6 font-body leading-relaxed text-grey-20">
+                I am a Senior Fullstack Engineer and Tech Lead with 10+ years of experience building cloud-native,
+                scalable software. I lead cross-functional engineering teams while championing AI-augmented development
+                workflows using Claude Code and related tooling. My work spans Java, TypeScript, Go, Kubernetes, and
+                AWS — from embedded systems to large-scale SaaS platforms used daily by thousands of customers in
+                automotive, pharmaceutical, and other industries. My approach is grounded in clean architecture,
+                test-driven development, and a passion for integrating AI into everyday engineering practice. </p>
+              <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+                <div class="flex items-center justify-center sm:justify-start">
+                  <p class="font-body text-lg font-semibold uppercase text-grey-20">
+                    Connect with me </p>
+                  <div class="hidden sm:block">
+                    <i class="bx bx-chevron-right text-2xl text-primary"></i>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                  <a href="https://www.linkedin.com/in/stefanstadler/" target="_blank" class="pl-4"> <i
+                    class="bx bxl-linkedin text-2xl text-primary "></i> </a>
+                  <a href="https://github.com/StefanStadler" target="_blank" class="pl-4"> <i
+                    class="bx bxl-github text-2xl text-primary "></i> </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+              <div>
+                <div class="flex items-end justify-between">
+                  <h4 class="font-body font-semibold uppercase text-black">
+                    Java / Spring </h4>
+                  <h3 class="font-body text-3xl font-bold text-primary">
+                    95% </h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                  <div class="h-3 rounded-full bg-primary" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="pt-6">
+                <div class="flex items-end justify-between">
+                  <h4 class="font-body font-semibold uppercase text-black">
+                    Kubernetes / Go </h4>
+                  <h3 class="font-body text-3xl font-bold text-primary">
+                    85% </h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                  <div class="h-3 rounded-full bg-primary" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="pt-6">
+                <div class="flex items-end justify-between">
+                  <h4 class="font-body font-semibold uppercase text-black">
+                    Angular / Vue / Typescript </h4>
+                  <h3 class="font-body text-3xl font-bold text-primary">
+                    90% </h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                  <div class="h-3 rounded-full bg-primary" style="width: 98%"></div>
+                </div>
+              </div>
+              <div class="pt-6">
+                <div class="flex items-end justify-between">
+                  <h4 class="font-body font-semibold uppercase text-black">
+                    DevOps / AWS </h4>
+                  <h3 class="font-body text-3xl font-bold text-primary">
+                    85% </h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                  <div class="h-3 rounded-full bg-primary" style="width: 91%"></div>
+                </div>
+              </div>
+              <div class="pt-6">
+                <div class="flex items-end justify-between">
+                  <h4 class="font-body font-semibold uppercase text-black">
+                    AI & LLM Tooling </h4>
+                  <h3 class="font-body text-3xl font-bold text-primary">
+                    90% </h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                  <div class="h-3 rounded-full bg-primary" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-20 min-h-screen flex justify-center content-center" id="services">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 flex justify-center content-center">
+          <div
+            class="p-4 rounded-md flex justify-center content-center items-center  text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+            Here's what I'm good at
+          </div>
+          <div
+            class="p-4 rounded-md flex items-center justify-center grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-2">
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="block">
+                  <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3
+                  class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl ">
+                  FULLSTACK WEB DEVELOPMENT </h3>
+                <p class="text-grey pt-4 text-sm md:text-base">
+                  Migration or Rewrite of legacy applications to state of the art software stacks and technologies.</p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="block">
+                  <img src="/assets/img/devops.svg" alt="devops icon" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3
+                  class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl ">
+                  DevOps </h3>
+                <p class="text-grey pt-4 text-sm md:text-base">
+                  Introduction of Continuous Integration / Delivery workflows with CircleCI, Github Actions and
+                  Jenkins. </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="block">
+                  <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3
+                  class="pt-8 text-lg font-semibold uppercase text-primary  lg:text-xl ">
+                  Cloud Native </h3>
+                <p class="text-grey pt-4 text-sm  md:text-base">
+                  Setup of Cloud Native Architectures and Infrastructure mainly in AWS and Terraform </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow h-96 hover:bg-gray-100">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="block">
+                  <img src="/assets/img/icon-development-black.svg" alt="AI development icon" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3
+                  class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl ">
+                  AI-Driven Development </h3>
+                <p class="text-grey pt-4 text-sm md:text-base">
+                  Integrating LLM-assisted workflows into engineering teams — from code generation and refactoring to test writing and documentation using Claude Code and related tooling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-20 px-8 flex justify-center content-center" id="projects">
+        <div class="grid grid-cols-1 gap-4 lg:gap-8 w-full">
+          <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+            Open Source Projects
+          </h2>
+          <div class="container mx-auto mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 px-4">
+
+            <div class="group rounded px-8 py-10 shadow hover:bg-gray-100">
+              <div class="flex items-start justify-between">
+                <h3 class="font-header text-xl font-bold uppercase text-primary">Hofwerk</h3>
+                <a href="https://github.com/StefanStadler/hofwerk" target="_blank" class="pl-4 shrink-0">
+                  <i class="bx bxl-github text-2xl text-primary"></i>
+                </a>
+              </div>
+              <p class="pt-3 font-body text-sm text-grey md:text-base">
+                A personal plugin marketplace for Claude — everyday workflows for taxes, finances, email and contracts, packaged as installable skills.
+              </p>
+              <div class="pt-6 space-y-4">
+                <div>
+                  <span class="font-body font-semibold text-black">fiskus</span>
+                  <p class="pt-1 font-body text-sm text-grey">Tax workflow: sorts receipts, fetches online invoices, estimates tax liability and prepares VAT returns.</p>
+                </div>
+                <div>
+                  <span class="font-body font-semibold text-black">vertragscheck</span>
+                  <p class="pt-1 font-body text-sm text-grey">Pre-checks freelance contracts clause by clause, backs each finding with cited sources and suggests counter-proposals. Ships with a bundled MCP server and LanceDB knowledge base.</p>
+                </div>
+                <div>
+                  <span class="font-body font-semibold text-black">postfach</span>
+                  <p class="pt-1 font-body text-sm text-grey">Sorts the Gmail inbox by your own rules and learns new rules from your decisions.</p>
+                </div>
+              </div>
+              <div class="pt-6 flex flex-wrap gap-2">
+                <span class="rounded-full bg-lila px-3 py-1 text-xs font-semibold text-primary">Claude Code Plugins</span>
+                <span class="rounded-full bg-lila px-3 py-1 text-xs font-semibold text-primary">Agent Skills</span>
+                <span class="rounded-full bg-lila px-3 py-1 text-xs font-semibold text-primary">MCP</span>
+                <span class="rounded-full bg-lila px-3 py-1 text-xs font-semibold text-primary">LanceDB</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-20 px-8 min-h-screen flex justify-center content-center" id="work">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 flex justify-center content-center">
+          <h2
+            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl sm:max-h-20">
+            My work experience </h2>
+          <h3 class=" pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl sm:max-h-40">
+            A decade of building, leading, and shipping </h3>
+
+          <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+            <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0"> <img src="/assets/img/cplace-logo.png" class="h-auto w-32"
+                                               alt="company logo" /> </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">Jan 2025 - Present</span> <span
+                      class="block pt-2 font-header text-xl font-bold uppercase text-primary">Tech Lead & Senior Fullstack Engineer</span>
+                      <div class="pt-2">
+                        <span class="block font-body text-black">
+                          <ul class="cv">
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Led a high-performing engineering team, overseeing architecture decisions, code reviews, and team development
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Drove adoption of AI-assisted development practices using Claude Code, significantly accelerating feature delivery and code quality
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Introduced structured AI workflows enabling developers to leverage LLMs for code generation, refactoring, test writing, and documentation
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Mentored junior and mid-level engineers, fostering a culture of continuous learning and engineering excellence
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0"> <img src="/assets/img/cplace-logo.png" class="h-auto w-32"
+                                               alt="company logo" /> </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">Apr 2019 - Dec 2024</span> <span
+                      class="block pt-2 font-header text-xl font-bold uppercase text-primary">Software Developer → Senior Fullstack Engineer</span>
+                      <div class="pt-2">
+                        <span class="block font-body text-black">
+                          <ul class="cv">
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Designed and implemented a fully functional cloud solution consisting of a Kubernetes Operator and Terraform infrastructure on AWS
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Developed an Angular 14 Frontend SDK that boosted productivity for internal, partner, and customer developers within the cplace platform
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Introduced API-first design principles, test-driven development, and modern CI/CD practices across multiple product lines
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Migrated core backend APIs and frontend components to latest Angular and Spring Framework versions
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Delivered solutions used daily by thousands of customers in automotive, pharmaceutical, and other industries
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0"> <img src="/assets/img/ftapi.png" class="h-auto w-32" alt="company logo" />
+                  </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">Mar 2017 - Nov 2018</span> <span
+                      class="block pt-2 font-header text-xl font-bold uppercase text-primary">Fullstack Web
+                      Developer</span>
+                      <div class="pt-2">
+                        <span class="block font-body text-black">
+                          <ul class="cv">
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> implemented a new reporting engine for FTAPI admins that collects and integrates vast datasets to intuitively readable summaries
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> developed <a class="text-blue-600" target="_blank" href="https://www.ftapi.com/plattform/secuforms/">FTAPI Secu Forms</a> as a greenfield project from scratch (Vue.js, Springboot, Docker, Jenkins CI environment with continuous e2e testing and deployment)
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0"> <img src="/assets/img/esg-logo.png" class="h-auto w-32" alt="ESG logo" />
+                  </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">Feb 2015 - Mar 2016</span> <span
+                      class="block pt-2 font-header text-xl font-bold uppercase text-primary">Software Engineer</span>
+                      <div class="pt-2">
+                        <span class="block font-body text-black">
+                          <ul class="cv">
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> implemented a lightweight backend server on a Raspberry Pi that allows to demonstrate car functionalities (seat-heating, lights etc.) on mobile devices during exhibitions
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> fully automated a code analysis engine for vehicle diagnostics code that reduced manual time effort by 95%
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0 flex items-center justify-center w-32 h-12 font-header font-bold text-primary text-lg uppercase">Bertrandt</span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">Jan 2014 - Jan 2015</span>
+                      <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Software Development Engineer</span>
+                      <div class="pt-2">
+                        <span class="block font-body text-black">
+                          <ul class="cv">
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Designed automated tests for Hardware-in-the-Loop test benches in Python
+                            </li>
+                            <li>
+                              <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Developed library functions for dSpace platform access in Python
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-16 border-t border-grey-40 pt-12">
+              <h3 class="text-center font-header text-2xl font-semibold uppercase text-primary sm:text-3xl md:text-left">Volunteer Work</h3>
+              <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+                <div class="md:w-2/5">
+                  <div class="flex justify-center md:justify-start">
+                    <span class="shrink-0 flex items-center justify-center w-32 font-header font-bold text-primary text-sm uppercase leading-tight">Lighthouse Relief</span>
+                    <div class="relative ml-3 hidden w-full md:block">
+                      <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-3/5">
+                  <div class="relative flex md:pl-18">
+                    <div class="mt-1 flex">
+                      <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                      <div class="md:-mt-1 md:pl-8">
+                        <span class="block font-body font-bold text-grey-40">Apr 2016 - Feb 2017 · Lesbos, Greece</span>
+                        <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Refugee Aid Volunteer</span>
+                        <div class="pt-2">
+                          <span class="block font-body text-black">
+                            <ul class="cv">
+                              <li>
+                                <i class="bx bxs-chevron-right hidden text-primary md:block"></i> Volunteered with <a class="text-blue-600" href="https://www.lighthouserelief.org" target="_blank">Lighthouse Relief</a>, an NGO providing emergency support to refugees arriving on the island of Lesbos during one of the most critical periods of the European refugee crisis
+                              </li>
+                            </ul>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="main.js" defer></script>
+</body>
+</html>

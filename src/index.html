@@ -21,7 +21,7 @@
 
   <meta property="og:description" content="Portfolio of Stefan Stadler – Senior Fullstack Engineer & Tech Lead with 10+ years of experience in cloud-native software, AI-driven development, Angular, Spring Boot, Kubernetes, and AWS." />
 
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
   <link as="style"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
@@ -30,6 +30,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <div class="w-full z-50 top-0 py-3 sm:py-5 absolute sticky top-0 z-50">
       <div class="lg:hidden flex justify-center content-center text-center">
         <div>
-          <button class="z-50" (click)="setMobileMenu()">
+          <button class="z-50" data-toggle-menu>
             <i class="bx bx-menu text-5xl"></i>
           </button>
         </div>
@@ -47,30 +48,30 @@
         <div class="hidden lg:block">
           <ul class="flex items-center">
             <li class="group pl-6">
-              <span (click)="triggerNavItem('#intro')"
+              <span data-nav="intro"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
 
               <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
-              <span (click)="triggerNavItem('#about')"
+              <span data-nav="about"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
 
               <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
-              <span (click)="triggerNavItem('#services')"
+              <span data-nav="services"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
 
               <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
-              <span (click)="triggerNavItem('#projects')"
+              <span data-nav="projects"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Projects</span>
               <span class="block h-0.5 w-full bg-transparent "></span>
             </li>
             <li class="group pl-6">
-              <span (click)="triggerNavItem('#work')"
+              <span data-nav="work"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span> <span
               class="block h-0.5 w-full bg-transparent "></span>
             </li>
@@ -81,19 +82,19 @@
 
     <div class="hidden sticky top-20 mobile-menu z-50 " id="mobileNav">
       <ul class="flex flex-col text-center text-white">
-        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#intro')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="intro" data-close-menu>
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Intro</span>
         </li>
-        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#about')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="about" data-close-menu>
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">About</span>
         </li>
-        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#services')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="services" data-close-menu>
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Services</span>
         </li>
-        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#projects')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="projects" data-close-menu>
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Projects</span>
         </li>
-        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" (click)="triggerMobileNavItem('#work')">
+        <li class="py-4 bg-white text-black rounded hover:bg-gray-100" data-nav="work" data-close-menu>
           <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase ">Work</span>
         </li>
       </ul>
@@ -558,5 +559,6 @@
   </div>
 
 </div>
+<script src="main.js" defer></script>
 </body>
 </html>
