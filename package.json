@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf docs && mkdir docs && cp -R src/assets src/favicon.ico src/index.html src/main.js docs/ && tailwindcss -i src/input.css -o docs/styles.css --minify"
+    "build": "rm -rf docs && mkdir docs && cp -R src/assets src/favicon.svg src/index.html src/main.js docs/ && tailwindcss -i src/input.css -o docs/styles.css --minify"
   },
   "author": "",
   "license": "ISC",

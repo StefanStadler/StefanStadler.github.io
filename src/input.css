@@ -11,7 +11,13 @@
   width: 350px;
 }
 .cv li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
   padding-top: 10px;
+}
+.cv li i {
+  flex-shrink: 0;
 }
 
 .blur {
